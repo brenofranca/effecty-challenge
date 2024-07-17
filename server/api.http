@@ -1,0 +1,32 @@
+@api = http://127.0.0.1:8000/api
+@token = Bearer 3|KzcHT0L1ApTYdQxJSXc9YVB7evsI1XUmElFYkJbYc6fd65de
+
+### User Log In
+
+POST {{api}}/login
+Content-Type: application/json
+
+{
+  "email": "admin@effecty.com",
+  "password": "secret"
+}
+
+### User Log Out
+
+POST {{api}}/logout
+Accept: application/json
+Authorization: {{token}}
+
+{
+}
+
+### Licitations Recents
+GET {{api}}/licitation/recents?take=3
+Accept: application/json
+Authorization: {{token}}
+
+
+### Licitation Details
+GET {{api}}/licitation/1
+Accept: application/json
+Authorization: {{token}}
