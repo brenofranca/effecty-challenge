@@ -17,7 +17,14 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
+# install dependencies
 npm install
+
+# Copy env file and add Api url address
+cp .env.example .env
+
+# serve with hot reload at localhost:5173
+npm run dev
 ```
 
 ### Compile and Hot-Reload for Development
@@ -30,12 +37,6 @@ npm run dev
 
 ```sh
 npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
